@@ -3,3 +3,4 @@ streamlit==1.30.0
 tensorflow==2.16.1  # Adjusted version
 torch==2.7.0
 transformers==4.51.3
+gtts
