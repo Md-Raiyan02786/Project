@@ -15,8 +15,9 @@ OPENROUTER_API_KEY = "sk-or-v1-be6d6dcb25a8694d1799e8541a797e36d78a84043be3a3859
 
 # Load the CNN Model
 working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = f"{working_dir}/trained_model/plant_disease_prediction_model.h5"
+model_path = f"{working_dir}\app\trained_model\plant_disease_prediction_model.h5"
 model = tf.keras.models.load_model(model_path)
+
 
 # Load Class Names
 class_indices = json.load(open(f"{working_dir}/class_indices.json"))
